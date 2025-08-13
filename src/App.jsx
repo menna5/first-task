@@ -38,7 +38,7 @@ function App() {
         <Input type="text" placeholder="Enter Name .." value={name} onChange={(e) => setName(e.target.value)} />
         <label>Comment: </label>
         <Input type="textarea" placeholder="Enter Comment .." value={comment} onChange={(e) => setComment(e.target.value)} />
-        <Button onSubmit={() => onSubmit(name, comment)} label="Submit" />
+        <Button onClick={() => onSubmit(name, comment)} label="Submit" />
       </div>
       <div className='list-container'>
         <List feedback={{ name: 'Name', comment: 'Comment' }} />
@@ -48,7 +48,7 @@ function App() {
           )
         })}
       </div>
-      <Button onSubmit={() => clearAll()} label='Clear All' />
+      <Button onClick={() => clearAll()} label='Clear All' />
     </div>
   )
 }

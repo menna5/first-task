@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Button = ({label, onSubmit}) => {
+export const Button = ({label, onClick}) => {
   return (
-    <button onClick={onSubmit}>
+    <button onClick={onClick}>
         {label}
     </button>
   );
