@@ -1,0 +1,63 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    margin: 5px;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+}
+
+.inputs{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.inputs Button{
+    margin-top: 5px;
+}
+
+.list-container{
+    overflow: auto;
+    height: 30%;
+}
+
+.list{
+    background-color: aliceblue;
+    color: black;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-item{
+    justify-content: center;
+    display: flex;
+    gap: 2px;
+    width: 400px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+.list-item div{
+    text-align: start;
+    width: 50%;
+}
