@@ -1,0 +1,225 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 10px;
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  margin: 7% 0;
+  font-size: 2.2rem;
+}
+
+p {
+  color: rgba(74, 112, 138, 0.733);
+}
+
+label {
+  color: black;
+  font-weight: bold;
+}
+
+.inputs {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+input:focus,
+textarea:focus {
+  padding: 5px; /* slightly more padding when focused */
+  border-color: black;
+  outline: none;
+  color: black
+}
+
+.input::placeholder,
+textarea::placeholder {
+  padding: 2px;
+  color: gray;
+}
+
+.inputs button {
+  margin-top: 5%;
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.list-container button {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.list-container button:hover {
+  border: 1px solid white;
+  transform: scale(1.02);
+}
+
+button {
+  border: 1px solid black;
+}
+
+button:hover {
+  transform: scale(1.02);
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .list-item {
+  background-color: rgba(74, 112, 138, 0.733);
+  color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 0px;
+  padding: 10px;
+  text-align: center !important;
+}
+
+.list-container {
+  overflow: auto;
+  height: 25%;
+}
+
+.list {
+  color: black;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  justify-content: start;
+  display: flex;
+  gap: 2px;
+  width: 400px;
+  word-wrap: break-word;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 5px;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.list-item:hover {
+  background-color: rgba(74, 112, 138, 0.733);
+  color: white;
+}
+
+.list-item div {
+  width: 50%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.list-item :nth-child(1) {
+  text-align: start;
+}
+
+.header .list-item :nth-child(1) {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  /* width of scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* background of track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #919090;
+  /* scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* darker on hover */
+}
+
+@media (max-width: 450px) {
+  .app {
+    padding: 15px;
+  }
+
+  label {
+    color: black;
+    font-weight: bold;
+  }
+
+  .inputs {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input::placeholder {
+    color: black;
+  }
+
+  .list-container {
+    height: 30%;
+    width: 100%
+  }
+
+  .list-item div {
+    text-align: start;
+    width: 25%;
+  }
+
+  .header .list-item {
+    background-color: white !important;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 85%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 25px;
+  }
+
+  .header .list-item div {
+    text-align: center;
+  }
+
+  .list-item {
+    width: 85%;
+  }
+}
